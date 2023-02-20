@@ -1,0 +1,146 @@
+*{
+    scroll-behavior: smooth;
+}
+#AboutMe{
+    padding-top: 1rem;
+}
+.line{
+    position: relative;
+    width: 15rem;
+    height: 0.1rem;
+    background-color: black;
+    margin: 2% auto;
+}
+.line-center{
+    position: absolute;
+    width: 3rem;
+    height: 1rem;
+    border-radius: 40%;
+    background-color: orange;
+    margin: 2% 40%; 
+    margin-top: -8px;   
+}
+#about{
+    text-align: center;
+    margin: 1%;
+}
+#choose{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.514) ;
+}
+.aboutContent-Wrapper{
+    display: flex;
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 1px solid black;     */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#about-Image>img{
+    width: 27rem;
+    height:27rem;
+}
+#about-Content{
+    margin-top: 20px;
+}
+#content-Brief{
+    width: 38rem;
+    height: 28rem;
+    padding: 1rem;
+    /* border: 1px solid black;  */
+    font-size: 17px;
+    box-shadow: 30px grey;
+}
+#content-Brief p,h2,ul>li{
+    line-height: 2rem;
+}
+#content-Brief h2{
+    margin-top: 10px;
+}
+#content-Brief ul{
+    margin-left: 3rem;
+}
+.about-resume{
+    display: flex;
+    justify-content: center;
+    
+}
+.aboutbtn{
+    margin: 1rem;
+    padding: 0.4rem;
+    border-radius: 50px;
+    width: 25%;
+    font-size: 17px;
+    border: none;
+}
+.aboutresume{
+    background-color:orange;
+}
+.aboutresume>a{
+    color: black;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 750px)
+{
+    #AboutMe{
+        width: 100%;   
+    }
+    .about-Wrapper{
+        width: 100%;
+    }
+    
+    .aboutContent-Wrapper{
+        display: inline;
+    }
+    
+    #about-Image>img{
+        width: 0px;
+        height: 0px;
+    }
+    #content-Brief{
+        width: 100%;
+        margin: auto;
+        font-size: 25px;
+    }
+    #about-Content{
+        padding: 0px 30px;
+        margin-top: 0px;
+    }
+    #about-div-button{
+        margin-left: -80px;
+    } 
+    
+}
+@media only screen and (max-width: 750px)
+{
+    #AboutMe{
+        width: 100%;   
+    }
+    .about-Wrapper{
+        text-align: center;
+        width: 100%;
+    }
+    .aboutContent-Wrapper{
+        display: inline;
+    }
+    #about-Image>img{
+        width: 0px;
+        height: 0px;
+    }
+    #about-Content{
+        width: 100%;
+        margin-top: 0px;
+    }
+    #content-Brief{
+        width: 100%;
+    }
+    .about-resume{
+        display: inline;
+    }
+}
+@media screen and (min-width:1000px)
+{
+    #content-Brief{
+        width: 100%;
+    }
+}

@@ -1,0 +1,255 @@
+#resume{
+    padding-top: rem;
+    padding-bottom: 3rem;
+}
+
+#resume-Wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 93%;
+    margin: 1% auto;
+}
+#resume-Heading{
+    width: 30%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 100px;
+    /* border: 1px solid black;    */
+}
+ul{
+    list-style: none;
+}
+#icons{
+    background-color: #212f3c;
+    color: white;
+    padding:5rem 0.5rem 5rem 0.5rem;
+}
+#icons li{
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+#icons-heading{
+    padding:5rem 0.5rem 5rem 0.5rem;
+}
+#icons-heading li{
+    
+    margin-bottom: 38px; 
+    width: 12rem;
+    height: 2.3rem;
+    padding-left: 1rem;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 19px;
+    color: black;
+}
+#icons-heading a{
+    color: black;
+}
+#icons-heading .resume-icon-list:hover{
+    width: 12rem;
+    background-color: orange;
+}
+/* RESUME EDUCATION STARTS */
+#resume-onclick-education{
+    background-color: orange;
+}
+#resume-Content{
+    width: 70%;
+    border: 1px solid black;
+    padding-top: 2.5rem;
+    height: 60vh;
+    overflow: scroll;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;    
+}
+#resume-Content::-webkit-scrollbar {
+    display: none;
+}
+
+.small-circle i{
+    font-size: 7px;
+    margin-right: 1rem;
+}
+.fa-circle{
+    font-size: 9px;
+    color: orange;
+}
+.resume-education-unorder{
+    font-size: 1.8rem;
+    padding-left: 2rem;
+}
+.resume-education-list{
+   display: flex;
+   gap: 2rem;
+   padding-bottom: 2.9rem;
+   /* padding-right: 5rem; */
+   position: relative;
+}
+.resume-education-list div{
+    font-size: 1.1rem;
+}
+.resume-education-btn-container{
+    position: absolute;
+    right: 0;
+    padding-right: 1rem;
+}
+.resume-education-btn{
+    width: 150px;
+    padding: 0.7rem;
+    border-radius: 20px;
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
+    font-size: 14px;
+}
+.resume-education-heading{
+    font-size: 20px;
+    font-weight: 500;
+    color: orange;
+}
+
+/* RESUME SKILLS */
+.resume-skills{
+    padding-left: 5rem;
+    display: none;
+}
+.resume-skills div{
+    margin: 1rem;
+    margin-left: 0px;
+}
+
+.resume-skills-heading{
+    width: 35rem;
+    text-align: center;
+    font-size: 18px;
+}
+.resume-skills-btn{
+    width: 35rem;
+    height: 20px;
+    background-color:rgba(0, 0, 0, 0.171);  
+}
+.resume-skills-btn-inside{
+    height: 20px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: orange;
+    margin-top: -15px;
+}
+.inside1{
+    margin-top: -36px;
+    text-align: center;
+}
+
+/* Media Query Starts */
+@media screen  and (min-width:1000px){
+    .resume-education-list{
+        /* position:static !important; */
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .resume-education-btn-container{
+        position: static;
+    }
+    .resume-skills-btn{
+        width: 33rem;
+    }
+    
+}
+
+@media only screen and (max-width: 950px) and (min-width: 750px)
+{
+    #resume{
+        padding-top: 0rem;
+        padding-bottom: 3rem;
+    }
+    
+    #resume-Wrapper{
+        flex-direction: column;
+    }
+    #resume-Heading{
+        width: 100%;
+        height: 5vh;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0rem 5rem;
+    }
+    #icons-heading{
+        display: none;
+    }
+    #icons{
+        background-color: white;
+        color: #212f3c;
+        padding: 0rem;
+        display: flex;
+    }
+    #icons li{
+        margin-bottom: 20px;
+        font-size: 18px;
+        padding: 0rem 2rem;
+    }
+    #resume-Content{
+        width: 100%;
+        border: 1px solid black;
+        padding-top: 0rem;
+        height: 40vh;
+            
+    }
+    .resume-education-list{
+        /* position:static !important; */
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .resume-education-btn-container{
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 750px)
+{
+    #resume-Wrapper{
+        flex-direction: column;
+    }
+    #resume-Heading{
+        width: 100%;
+        height: 5vh;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0rem 2rem;
+    }
+    #icons-heading{
+        display: none;
+    }
+    #icons{
+        background-color: white;
+        color: #212f3c;
+        padding: 0rem;
+        display: flex;
+    }
+    #icons li{
+        margin-bottom: 20px;
+        font-size: 18px;
+        padding: 0rem 1rem;
+    }
+    #resume-Content{
+        width: 100%;
+        border: 1px solid black;
+        padding-top: 0rem;
+        height: 40vh;
+            
+    }
+    .resume-education-list{
+        /* position:static !important; */
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .resume-education-btn-container{
+        position: static;
+    }
+    .resume-skills-heading{
+        width: 100%;
+    }
+    .resume-skills-btn{
+        width: 20rem;
+    }
+}

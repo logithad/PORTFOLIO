@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+#contact-Me{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+#contact-Wrapper{
+    background-color: #212f3c;
+    height: 28rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    
+}
+#contact-content{
+    margin-left: 8rem;
+    color: white;
+    line-height: 3rem;
+    padding-top: 3rem;
+}
+#contact-icons{
+    display: flex;
+    gap: 1rem;
+}
+#sendEmailpara{
+    color: rgba(255, 255, 255, 0.774);
+}
+#contact-image{
+    width: 30rem;
+    height: 13rem;
+}
+#contact-form{
+    color: white;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-right: 8rem;
+}
+#contact-form>input{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: 20rem;
+    height: 1.8rem;
+    border-radius: 1.5rem;
+}
+label{
+    font-size: 18px;
+}
+#contact-form>button{
+    width: 40%;
+    height: 10%;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-size: large;
+}
+
+@media screen and (min-width:1000px)
+{
+    #contact-form>input{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 19rem;
+    }
+    #contact-content{
+        margin-left: 4rem;
+        line-height: 3rem;
+        padding-top: 3rem;
+    }
+    #contact-form{
+        padding: 1rem;
+        margin: 3rem;
+    }
+    #contact-Wrapper{
+        justify-content: space-around;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        
+    }
+}
+
+@media only screen and (max-width: 950px) and (min-width: 750px)
+{
+    #contact-Me{
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    #contact-form>input{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 13rem;
+    }
+    #contact-content{
+        margin-left: 4rem;
+        line-height: 3rem;
+        padding-top: 3rem;
+    }
+    #contact-form{
+        padding: 1rem;
+        margin: 3rem;
+    }
+    #contact-image{
+        width: 20rem;
+        height: 13rem;
+    }
+}
+@media only screen and (max-width: 750px)
+{
+    #contact-form>input{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 13rem;
+    }
+    #contact-content{
+        margin: 0% auto;
+        line-height: 3rem;
+        padding-top: 3rem;
+    }
+    #contact-form{
+        padding: 1rem;
+        margin: 0rem 3rem;
+    }
+    #contact-image{
+        width: 15rem;
+        height: 13rem;
+    }
+    #contact-Wrapper{
+        height: 50rem;
+        flex-direction: column;
+        justify-content: start;
+        margin: 1rem;  
+    }
+}
+@media only screen and (max-width: 281px)
+{
+    #contact-form>input{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 13rem;
+    }
+    #contact-content{
+        margin: 0% auto;
+        line-height: 3rem;
+        padding-top: 3rem;
+    }
+    #contact-form{
+        padding: 1rem;
+        margin: 0rem 0.5rem;
+    }
+    #contact-image{
+        width: 13rem;
+        height: 11rem;
+    }
+    #contact-Wrapper{
+        height: 50rem;
+        flex-direction: column;
+        justify-content: start;
+        margin: 1rem;  
+    }
+}

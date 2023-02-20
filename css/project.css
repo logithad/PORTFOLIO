@@ -1,0 +1,154 @@
+#project{
+    width: 93%;
+    margin: 1% auto;
+}
+.project-Whole{
+    margin-top: 30px;
+    background-color: #212f3c;
+}
+.project-One,.project-Two{
+    display: flex;    
+}
+.project-Two{
+    display: none;
+}
+.projectOne-Image,.projectTwo-Image{
+    width: 800px;
+    height: 470px;
+    padding: 3rem;
+}
+.projectOne-contentcontainer,.projectTwo-contentcontainer{
+    padding-top: 5rem ;
+    padding-right: 1rem; 
+    font-size: 17px;
+    line-height: 3rem;
+}
+
+.projectOne-contentcontainer p,.projectTwo-contentcontainer p{
+     color: white;
+}
+.projectOne-contentcontainer div,.projectTwo-contentcontainer div{
+    margin-top: 3rem;
+}
+.projectOne-contentcontainer>div>button,.projectTwo-contentcontainer>div>button{
+    padding: 10px;
+    width: 150px;
+}
+.projectLine-Wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.projectline{
+    width: 50px;
+    height: 5px;
+    background-color: white;
+
+}
+
+@media screen and (min-width:1000px) {
+    #project{
+        width: 100%;
+        margin: 0;
+        padding: 2.5rem;
+    }
+    .project-One,.project-Two{
+        flex-direction: column;   
+    }
+    .project-Whole{
+        width: 100%;
+    }
+    .projectOne-Image,.projectTwo-Image{
+        width: 100%;
+        padding: 3rem 4rem 0rem 4rem;
+    }
+    .projectOne-contentcontainer div,.projectTwo-contentcontainer div{
+        margin-top: 0rem;
+    }
+    .projectOne-contentcontainer>div>button,.projectTwo-contentcontainer>div>button{
+        padding: 10px;
+        width: 150px;
+    }
+    .projectOne-contentcontainer,.projectTwo-contentcontainer{
+       padding: 4rem 4rem 1rem 4rem;
+        
+    }
+    
+}
+@media only screen and (max-width: 950px) and (min-width: 750px)
+{
+    /* .about-Wrapper{
+        width: 100%;
+        text-align: center;
+    } */
+    #project{
+        width: 100%;
+        margin: 0;
+        padding: 2.5rem;
+    }
+    .project-One,.project-Two{
+        flex-direction: column;   
+    }
+    .project-Whole{
+        width: 100%;
+    }
+    .projectOne-Image,.projectTwo-Image{
+        width: 100%;
+        padding: 3rem 4rem 0rem 4rem;
+    }
+    .projectOne-contentcontainer div,.projectTwo-contentcontainer div{
+        margin-top: 0rem;
+    }
+    .projectOne-contentcontainer>div>button,.projectTwo-contentcontainer>div>button{
+        padding: 10px;
+        width: 150px;
+    }
+    .projectOne-contentcontainer,.projectTwo-contentcontainer{
+       padding: 4rem 4rem 1rem 4rem;
+        
+    }
+}
+@media only screen and (max-width: 750px)
+{
+  
+    #project{
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    .project-One,.project-Two{
+        flex-direction: column;   
+    }
+    .project-Whole{
+        width: 100%;
+    }
+    .projectOne-Image,.projectTwo-Image{
+        width: 100%;
+        height: 40vh;
+        padding: 1rem 2rem 0rem 2rem;
+    }
+    .projectOne-contentcontainer div,.projectTwo-contentcontainer div{
+        margin-top: 0rem;
+    }
+    .projectOne-contentcontainer>div>button,.projectTwo-contentcontainer>div>button{
+        padding: 10px;
+        width: 150px;
+    }
+    .projectOne-contentcontainer,.projectTwo-contentcontainer{
+       padding: 1rem;
+        
+    }
+    .about-resume button{
+        margin-left: 27%;
+    }
+}
+@media only screen and (max-width: 281px)
+{
+    .projectOne-Image,.projectTwo-Image{
+        padding: 2rem 1rem 0rem 1rem;
+    }
+    .about-resume button{
+        margin-left: 15%;
+    }
+}

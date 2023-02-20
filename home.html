@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/resume.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <script src="index.js"></script>
+    <script type="JAVASCRIPT"  src="navbar.js"></script>
+    <script src="../js/project.js"></script>
+
+    <!-- For Send Email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+<!-- NavBar and Home Page Starts -->
+        <div class="navandhome" id="navbar">
+            <div class="navbar">
+                <div class="brandname">
+                    <h2>PORT
+                        <span class="highlighted">FOLIO</span>
+                    </h2>
+                </div>
+                <ul class="navbar-listnames">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact-Me">Contact Me</a></li>
+                </ul>
+ 
+                <div class="navbar-bars"
+                    onclick="document.getElementsByClassName('navbar-listnames')[0].classList.toggle('show')">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+            </div >
+            <!-- Home Page Starts -->
+            <div class="home-page">
+                <div class="home-content">
+                    <div class="home-content-user">
+                        <h3> <pre> Hello , I'M Logitha D</pre></h3>
+                            
+                        <p>Knock of building applications with frontend and backend</p>
+                        <div class="home-resume">
+                            <button class="btn">Hire Me</button>
+                            <button class="btn resume"><a href="/LOGITHA-20CSR110.pdf" download="Logitha Resume">Resume</a></button>
+                        </div>
+                    </div>
+                    <div class="home-image">
+                        <img src="/PHOTO.JPG" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Home page Ends -->
+        </div>
+<!-- Navbar and Home Page Ends -->
+
+
+<!-- About Me Page Starts -->
+        <div id="AboutMe">
+            <div class="about-Wrapper">
+                <h2 id="about">About Me</h2>
+                <h2 id="choose">Why Choose Me?</h2>
+                <div class="line">
+                    <div class="line-center"></div>
+                </div>
+            </div>
+
+            <div class="aboutContent-Wrapper">
+                <!-- About Image Starts -->
+                <div id="about-Image">
+                    <img src="/PHOTO.JPG" alt="no internet connection">
+                </div>
+                <!-- About Image Ends -->
+
+                <!-- About Cnntent Starts -->
+                <div id="about-Content">
+                    <div id="content-Brief">
+                        <p>
+                            Full Stack web development with background knowledge of MERN 
+                            stacks with redux, along with Knack of building applications
+                            with utmost efficiency Strong professional
+                            development with MySQL using PHP
+                        </p>
+                        <h2>Here are few highlights</h2><br>
+                        <ul>
+                            <li class="small-circle"><i class="fa-solid fa-circle"></i>Frontend</li>
+                            <li class="small-circle"><i class="fa-solid fa-circle"></i>Backend</li>
+                            <li class="small-circle"><i class="fa-solid fa-circle"></i>React</li>
+                            <li class="small-circle"><i class="fa-solid fa-circle"></i>MERN stack DEV</li>
+                            <li class="small-circle"><i class="fa-solid fa-circle"></i>Data Structure</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- About Content Ends -->
+            </div>
+        </div> 
+ <!-- About Me Page Ends  -->
+
+
+<!-- Resume Page Starts -->
+        <div id="resume">
+            <div class="about-Wrapper">
+                <h2 id="about">Resume</h2>
+                <h2 id="choose">My Format Bio Details</h2>
+                <div class="line">
+                    <div class="line-center"></div>
+                </div>
+            </div>
+            <div id="resume-Wrapper">
+                <div id="resume-Heading">
+                    <ul id="icons">
+                        <li class="resume-icon-list" onclick="displayEducation()"><i class="fa-solid fa-school"></i></li>
+                        <li class="resume-icon-list" onclick="displaySkills()"><i class="fa-solid fa-computer"></i></li>
+                    </ul>
+                    <ul id="icons-heading">
+                        <li class="resume-icon-list" id="resume-onclick-education" onclick="displayEducation()">
+                            <a href="#/" id="resume-onclick-education-a">Education</a> 
+                        </li>
+                        <li class="resume-icon-list " id="resume-onclick-skills" onclick="displaySkills()">
+                            <a href="#/" id="resume-onclick-skills-a">Programming Skills</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="resume-Content">
+                    <!-- Education Details Starts -->
+                    <div class="resume-Education">
+                        <ul class="resume-education-unorder" >
+                            <!-- College -->
+                            <li class="resume-education-list">
+                                <div>
+                                    <p class="resume-education-heading">
+                                        <span><i class="fa-solid fa-circle"></i></span>
+                                        Kongu Engineering College,Perundurai
+                                    </p>
+                                    <span>BE-Computer Science and Engineering - 9.61 cgpa</span>
+                                </div>
+                                <div class="resume-education-btn-container">
+                                    <button class="resume-education-btn">2020-2024</button>
+                                </div>
+                            </li>
+                            <!-- Higher Secondary -->
+                            <li class="resume-education-list">
+                                <div>
+                                    <p class="resume-education-heading">
+                                        <span><i class="fa-solid fa-circle"></i></span>
+                                        Green Garden Matric Higher Secondary School,Korakkatuvalasu
+                                    </p>
+                                    <span>Higher Secondary Certificate - 90.5 %</span>
+                                </div>
+                                <div class="resume-education-btn-container">
+                                    <button class="resume-education-btn">2019-2020</button>
+                                </div>
+                            </li>
+                            <!-- Secondary -->
+                            <li class="resume-education-list">
+                                <div>
+                                    <p class="resume-education-heading">
+                                        <span><i class="fa-solid fa-circle"></i></span> 
+                                        Shri Vethathiri Vidhalaiya Matric Higher Secondary School,Modakkurichi.
+                                    </p>
+                                    <span>Secondary School Leaving Certificate - 95%</span>
+                                </div>
+                                <div class="resume-education-btn-container">
+                                    <button class="resume-education-btn">2017-2018</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> 
+                    <!-- Education Details Ends -->
+
+                    <!-- Skills Details Starts -->
+                     <div class="resume-skills">
+                        <div class="resume-skills-heading">C PROGRAMMING</div>
+                        <div class="resume-skills-btn">
+                            <div class="resume-skills-btn-inside" style="width: 70%;">
+                                <div class="inside1">70%</div>
+                            </div>
+                        </div>
+                        <div class="resume-skills-heading">JAVA</div>
+                        <div class="resume-skills-btn">
+                            <div class="resume-skills-btn-inside" style="width: 90%;">
+                                <div class="inside1">90%</div>
+                            </div>
+                        </div>
+                        <div class="resume-skills-heading">PYTHON</div>
+                        <div class="resume-skills-btn">
+                            <div class="resume-skills-btn-inside" style="width: 60%;">
+                                <div class="inside1">60%</div>
+                            </div>
+                        </div>
+                        <div class="resume-skills-heading">HTML</div>
+                        <div class="resume-skills-btn">
+                            <div class="resume-skills-btn-inside" style="width: 70%;">
+                                <div class="inside1">75%</div>
+                            </div>
+                        </div>
+                        <div class="resume-skills-heading">CSS</div>
+                        <div class="resume-skills-btn">
+                            <div class="resume-skills-btn-inside" style="width: 70%;">
+                                <div class="inside1">70%</div>
+                            </div>
+                        </div>
+                        <div class="resume-skills-heading">JAVASCRIPT</div>
+                        <div class="resume-skills-btn">
+                            <div class="resume-skills-btn-inside" style="width: 70%;">
+                                <div class="inside1">75%</div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- Skills Details Ends -->
+
+
+                </div>
+                
+            </div>
+        </div> 
+<!-- Resume Page Ends -->
+
+
+<!-- Project Demo Starts -->
+        <div id="project">
+            <div class="about-Wrapper">
+                <h2 id="about">Project Demo</h2>
+                <h2 id="choose">What I Did</h2>
+                <div class="line">
+                    <div class="line-center"></div>
+                </div>
+            </div>
+            <div class="project-Whole">
+                 <!-- ProjectOne Starts -->
+                <div class="project-One">
+                    <div class="projectOne-imagecontainer">
+                        <img src="./projectOne.jpg" alt="" class="projectOne-Image">
+                    </div>
+                    <div class="projectOne-contentcontainer">
+                        <p>Amazona is a e-commerce website to buy products.
+                            (MERN - FRAMEWORK) React JS used for front end framework.
+                             Node JS used to connect to the server. 
+                             MongoDB is used to store the data.
+                        </p>
+                        <div class="about-resume">
+                            <button class="aboutbtn">Live Demo</button>
+                            <button class="aboutbtn aboutresume">Code</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ProjectOne Ends -->
+
+                <!-- ProjectTwo Starts -->
+                <div class="project-Two">
+                    <div class="projectTwo-imagecontainer">
+                        <img src="./projectOne.jpg" alt="" class="projectTwo-Image">
+                    </div>
+                    <div class="projectTwo-contentcontainer">
+                        <p>Logitha is a e-commerce website to buy products.
+                            (MERN - FRAMEWORK) React JS used for front end framework.
+                             Node JS used to connect to the server. 
+                             MongoDB is used to store the data.
+                        </p>
+                        <div class="about-resume">
+                            <button class="aboutbtn">Live Demo</button>
+                            <button class="aboutbtn aboutresume">Code</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ProjectTwo Ends -->
+
+                <div class="projectLine-Wrapper">
+                    <div class="projectline" onclick="displayProjectOne()"></div>
+                    <div class="projectline" onclick="displayProjectTwo()"></div>
+                </div>
+            </div>
+            
+        </div> 
+<!-- Project Demo Ends -->
+
+
+
+<!-- Contact Me Starts -->
+        <div id="contact-Me">
+            <div class="about-Wrapper">
+                <h2 id="about">Contact Me</h2>
+                <h2 id="choose">Let's Keep in touch</h2>
+                <div class="line">
+                    <div class="line-center"></div>
+                </div>
+            </div>
+            <div id="contact-Wrapper">
+                <div id="contact-content">
+                    <h2>Get In Touch</h2>
+                    <div id="contact-icons">
+                        <h3><i class="fa-brands fa-github"></i></h3>
+                        <h3><i class="fa-brands fa-linkedin"></i></h3>
+                    </div>                    
+                    <p id="sendEmailpara">Send your Email here</p>
+                    <img src="email.jpg" alt="no internet connection" id="contact-image">
+                </div>
+
+                <form id="contact-form" method="post">
+                    <label for="">Name</label><br>
+                    <input type="text"><br>
+                    <label for="">Email</label><br>
+                    <input type="email"><br>
+                    <label for="">Message</label><br>
+                    <input type="text" name="" id=""><br>
+                    <button onclick="sendEmail()">Send <i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+
+<!-- Contact Me Ends -->
+
+    </header>
+    
+<!-- Footer Section Starts -->
+    <footer id="footer-Wrapper">
+        <div>
+            <h3>LOGITHA</h3>
+        </div>
+        
+        <div class="footer-Nav" id="footer-Nav-display">
+            <ul class="navbar-listnames" id="footnav">
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#AboutMe">AboutMe</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#project">Project Demo</a></li>
+                <li><a href="#contact-Me">Contact</a></li>
+            </ul>
+        </div>
+        <div id="footer-contact">
+            <p class="footer-Email">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <a href="#">logithadinesh@gmail.com</a>
+            </p>
+            <p class="footer-Email">
+                <span><i class="fa-solid fa-phone"></i></span>
+                <a href="#">+91 75400-84223</a>
+            </p>
+            <p class="footer-Email" id="last">
+                @ logitha, All rights reserved.
+            </p>
+        </div>
+        
+    </footer>
+<!-- Footer Section Ends -->
+</body>
+</html>
